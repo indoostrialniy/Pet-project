@@ -1,0 +1,23 @@
+;2024-12-16 14:44:43.044397
+;name TextBox
+
+;this script exports CB as divided description of vertexes and polygons with normals
+
+vertices 3
+edges 3
+polygons 1
+
+data
+
+//vertices: index + coordinates (x y z)
+v 0 5.303301 5.303301 -7.500000
+v 1 -5.303301 -5.303301 7.500000
+v 2 -5.303301 -5.303301 -7.500000
+
+//edges: index + indexes of verts (v0 v1)
+e 0 0 2
+e 1 2 1
+e 2 1 0
+
+//polygons: index + indexes of verts (i0 i1 i2) + normal(x y z)
+p 0 0 2 1 -0.707107 0.707107 -0.000000
