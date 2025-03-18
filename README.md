@@ -1,5 +1,5 @@
 # Custom-engine-powered small FPS
-WIP-билд небольшого шутера на самописном движке, созданном на C++/OpenGL с помощью стандартных библиотек + GLFW, GLEW, GLM, SFML, STB, а также <br>  biCycle v1.2 https://github.com/indoostrialniy/biCycle и CEAE https://github.com/indoostrialniy/CEAE
+WIP-билд небольшого шутера на самописном движке, созданном на C++/OpenGL с помощью стандартных библиотек + GLFW, GLEW, GLM, SFML, STB, а также <br>  biCycle v1.2 https://github.com/indoostrialniy/biCycle и CEAE v0.3.10 https://github.com/indoostrialniy/CEAE
 <br>
 
 Не предназначен для широкого пользования, предоставляется "как есть".
