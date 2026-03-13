@@ -51,8 +51,11 @@ public:
 	
 	
 	std::shared_ptr<SoundAsset> sound_takeWeapon = SoundAssets.getAsset("padenie-orujiya-iz-ryukzaka.wav");
-	std::shared_ptr<SoundAsset> sound_walking = SoundAssets.getAsset("korotkiy-chtkiy-bodryiy-zvuk-shaga.wav");
-	std::shared_ptr<SoundAsset> sound_LightSwitch = SoundAssets.getAsset("najatie-knopki-fonarika.wav");
+	//std::shared_ptr<SoundAsset> sound_walking = SoundAssets.getAsset("korotkiy-chtkiy-bodryiy-zvuk-shaga.wav");
+	std::shared_ptr<SoundAsset> sound_walking = SoundAssets.getAsset("step.wav"); //blowout_wave_01.ogg");	//
+
+	//std::shared_ptr<SoundAsset> sound_LightSwitch = SoundAssets.getAsset("najatie-knopki-fonarika.wav");
+	std::shared_ptr<SoundAsset> sound_LightSwitch = SoundAssets.getAsset("torch.wav");
 
 	std::shared_ptr<SoundAsset> sound_Pain = SoundAssets.getAsset("ston-mujskoy-bol.wav");
 

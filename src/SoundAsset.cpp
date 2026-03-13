@@ -9,6 +9,10 @@
 //#include <filesystem>
 //namespace fs = std::filesystem;
 
+//#include "Stringapiset.h"
+//#include <windows.h>
+//#include <codecvt>
+//#include <locale>
 
 SoundAsset::SoundAsset()
 {
@@ -42,7 +46,7 @@ SoundAsset::~SoundAsset()
 
 bool SoundAsset::configureSound(std::string& resourceName)
 {
-	//std::cout << "\nConfigure Sound: " << resourceName << std::endl;
+	//std::cout << "\n\nConfigure Sound: " << resourceName << std::endl;
 
 	std::string temp_path = resourceName;
 	for(long long unsigned int i = 0; i< temp_path.length(); i++)
@@ -69,10 +73,17 @@ bool SoundAsset::configureSound(std::string& resourceName)
 
 	//if (!fs::exists(getSoundPath(temp_path)))	{	std::cout << "File does not exist: " << getSoundPath(temp_path) << std::endl;	}
 	//else { std::cout << "File exist: " << getSoundPath(temp_path) << std::endl; }
+		
+	//std::cout << "Current path: " << std::filesystem::current_path() << std::endl;
+	
 
-	if ( !soundBuffer.loadFromFile( getSoundPath(temp_path) ) )	// 
+	//std::string absPath = std::filesystem::absolute(getSoundPath(temp_path)).string();
+
+	//std::cout << "Absolute path: " << absPath << std::endl;
+
+	if ( !soundBuffer.loadFromFile(getSoundPath(temp_path)) )	// 
 	{
-		printVarComment("Error loading sound: ", getSoundPath(temp_path) )
+		printVarComment("Error loading sound: ", getSoundPath(temp_path))
 		DEBUG_INFO
 		return false;
 	}
@@ -129,8 +140,8 @@ bool SoundAsset::stopSound()
 
 std::string SoundAsset::getSoundPath(std::string& filename)
 {	
-	return getOperationSystem() == "Windows" ? "datas/audio/" + filename + "" : "./datas/audio/" + filename + "";
-	//return getOperationSystem() == "Windows" ? "datas\\audio\\" + filename + "" : "./datas/audio/" + filename + "" ;		
+	//return getOperationSystem() == "Windows" ? "datas/audio/" + filename + "" : "./datas/audio/" + filename + "";
+	return getOperationSystem() == "Windows" ? "datas\\audio\\" + filename + "" : "./datas/audio/" + filename + "" ;		
 }	//тернарный определитель пути
 
 

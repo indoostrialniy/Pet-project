@@ -118,7 +118,7 @@ bool Core::initGL()
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	glfwWindowHint(GLFW_RESIZABLE, GL_TRUE);
 
-	engineWindow = glfwCreateWindow(windowResolution.x, windowResolution.y, "Demo build v0.1.1 feb 2025", nullptr, nullptr);
+	engineWindow = glfwCreateWindow(windowResolution.x, windowResolution.y, "Pet-project v0.1.1 @indoostrialniy", nullptr, nullptr);
 
 	if (engineWindow == nullptr) 
 	{ 

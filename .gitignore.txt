@@ -1,0 +1,15 @@
+# Global ignoring of different binaries and another temporary files
+
+/demo_linux_v0.1.0.0
+/demo_windows_v0.1.0.exe
+/fhEngine_MSVS.exe
+/glew32.dll
+/glfw3.dll
+/libgcc_s_seh-1.dll
+/libstdc++-6.dll
+/libwinpthread-1.dll
+/pet-project demo footage build-v010c.mp4
+/sfml-audio-2.dll
+/sfml-system-2.dll
+
+screenshots/
